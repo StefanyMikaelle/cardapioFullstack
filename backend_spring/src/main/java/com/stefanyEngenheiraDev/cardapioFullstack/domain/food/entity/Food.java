@@ -1,6 +1,6 @@
-package com.stefanyEngenheiraDev.cardapioFullstack.entity;
+package com.stefanyEngenheiraDev.cardapioFullstack.domain.food.entity;
 
-import com.stefanyEngenheiraDev.cardapioFullstack.dtos.FoodRequestDto;
+import com.stefanyEngenheiraDev.cardapioFullstack.domain.food.dtos.FoodRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -21,7 +21,7 @@ public class Food {
     private String image;
     private Integer price;
 
-    public Food(FoodRequestDto foodRequestDto){
+    public Food(FoodRequestDTO foodRequestDto){
         this.title = foodRequestDto.title();
         this.image = foodRequestDto.image();
         this.price = foodRequestDto.price();
